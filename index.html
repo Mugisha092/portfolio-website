@@ -60,7 +60,7 @@
     <div class="info">
         <h3> <span> name : </span> Mugisha Joseph </h3>
         <h3> <span> age : </span> 20 </h3>
-        <h3> <span> language : </span> English,Kinyarwanda,Francois</h3>
+        <h3> <span> language : </span> English,Kinyarwanda,French</h3>
         <a href="#"><button class="btn"> download CV</button></a>
     </div>
 
@@ -202,15 +202,40 @@
 
     </div>
 
-    <form action="">
+    <div class="container">
+        <form>
+          <i class="fas fa-paper-plane"></i>
+    
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="contact-name" placeholder="Enter Name" onkeyup="validateName()">
+            <span id="name-error"></span>
+          </div>
+    
+          <div class="input-group">
+            <label>Phone No.</label>
+            <input type="number" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+          </div>
+    
+          <div class="input-group">
+            <label>Email Id</label>
+            <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+          </div>   
+    
+          <div class="input-group">
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+          </div>
+        <button onclick="return validateform()" class="btn">Send</button>
+      
+        <span id="submit-error"></span>
+    
+      </form>
 
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-
-    </form>
+      </div>
 
 </div>
 
@@ -222,7 +247,7 @@
 <!-- scroll top button  -->
 
 <a href="#home" class="top">
-    <img src="images/scroll-top-img.png" alt="">
+    <img src="image/scroll-top-img.png" alt="">
 </a>
 
 
