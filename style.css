@@ -24,18 +24,6 @@ html{
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
-    width:1.4rem;
-}
-
-html::-webkit-scrollbar-track{
-    background:#5697BC;
-}
-
-html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
-}
-
 body{
     background:#5697BC;
     overflow-x: hidden;
@@ -97,10 +85,9 @@ header{
 header .user img{
     height:17rem;
     width:17rem;
-    border-radius: 50%;
+    border-radius: 30%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid #5697BC;
 }
 
 header .user .name{
@@ -122,15 +109,13 @@ header .navbar ul{
     padding:1rem 3rem;
 }
 
-
 header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
-    background:#333;
-    color:#fff;
+    color:#333;
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
 }
 
 header .navbar ul li a:hover{
@@ -140,8 +125,8 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:#333;
-    color:#fff;
+    background:#fff;
+    color:#333;
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
@@ -240,7 +225,6 @@ header .navbar ul li a:hover{
     width:27rem;
     margin:4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
     position: relative;
 }
 
@@ -368,6 +352,7 @@ header .navbar ul li a:hover{
     right: 2rem;
     z-index: 100;
     display: none;
+    font-size: 4rem;
 }
 .error{
     position: absolute;
@@ -525,15 +510,24 @@ form button{
     html{
         font-size: 50%;
     }
- 
+    .container{
+        width:100%;
+    }
  }
 
 @media (max-width:400px){
 
     header{
-        width: 100vw;
+        width: 50vw;
     }
 
+    header .user img{
+        height:17rem;
+        width:17rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+ 
     .heading{
         margin:0 3rem;
     }
@@ -552,6 +546,9 @@ form button{
 
     .contact .row form{
         margin:3rem 0;
+    }
+    .container{
+        width:100%;
     }
 
  }

@@ -7,7 +7,7 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
+    <script src="https://kit.fontawesome.com/1b87f50f7a.js" crossorigin="anonymous"></script></head>
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
 
@@ -20,17 +20,15 @@
 
     <div class="user">
         <img src="1.png" alt="">
-        <h3 class="name">Mugisha Joseph</h3>
-        <p class="post">front end developer</p>
     </div>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#home"><p><i class="fa-solid fa-house-chimney wal"></i></p>home</a></li>
+            <li><a href="#about"><p><i class="fa-solid fa-person"></i></i></p>about</a></li>
+            <li><a href="#education"><p><i class="fa-solid fa-graduation-cap"></i></p>education</a></li>
+            <li><a href="#portfolio"><p><i class="fa-solid fa-diagram-project"></i></p>portfolio</a></li>
+            <li><a href="#contact"><p><i class="fa-solid fa-address-card"></i></p>contact</a></li>
         </ul>
     </nav>
 
@@ -44,9 +42,8 @@
 
 <section class="home" id="home">
 
-    <h3>HI THERE !</h3>
     <h1>I'M <span>Mugisha Joseph</span></h1>
-    <p>I am creative web developer,app designer and graphic designer with  good quality
+    <p>I am creative web developer,app designer and graphic designer <br> with  good quality
     </p>
     <a href="#contact"><button class="btn">Contact me <i class="fas fa-user"></i></button></a>
     <a href="#contact"><button class="btn">Hire me <i class="fas fa-user"></i></button></a>
@@ -204,39 +201,38 @@
 
     <div class="container">
         <form>
-          <i class="fas fa-paper-plane"></i>
-    
-          <div class="input-group">
-            <label>Full Name</label>
-            <input type="text" id="contact-name" placeholder="Enter Name" onkeyup="validateName()">
-            <span id="name-error"></span>
-          </div>
-    
-          <div class="input-group">
-            <label>Phone No.</label>
-            <input type="number" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
-            <span id="phone-error"></span>
-          </div>
-    
-          <div class="input-group">
-            <label>Email Id</label>
-            <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
-            <span id="email-error"></span>
-          </div>   
-    
-          <div class="input-group">
-            <label>Your Message</label>
-            <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
-            <span id="message-error"></span>
-          </div>
-        <button onclick="return validateform()" class="btn">Send</button>
-      
-        <span id="submit-error"></span>
-    
+        <div class="cont">
+            <i class="fas fa-paper-plane"></i>
+        
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="contact-name" placeholder="Enter Name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+        
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="number" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+        
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>   
+        
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <button onclick="return validateform()" class="btn">Send</button>
+        
+            <span id="submit-error"></span>
+        </div>
       </form>
-
       </div>
-
 </div>
 
 </section>
@@ -247,7 +243,7 @@
 <!-- scroll top button  -->
 
 <a href="#home" class="top">
-    <img src="image/scroll-top-img.png" alt="">
+    <i class="fa-solid fa-jet-fighter-up"></i>
 </a>
 
 

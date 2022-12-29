@@ -19,8 +19,8 @@ $(document).ready(function(){
   });
 
   // smooth scrolling 
-
-  $('a[href*="#"]').on('click',function(e){
+  var a='a[href*="#"]';
+  $(a).on('click',function(e){
 
     e.preventDefault();
 
@@ -29,7 +29,7 @@ $(document).ready(function(){
       scrollTop : $($(this).attr('href')).offset().top,
 
     },
-      500, 
+      400, 
       'linear'
     );
 
@@ -64,7 +64,7 @@ function validateName(){
 }
 var name=document.getElementById('contact-name').value;
 if (nameError.length === 0 ) {
-  submitEror.disabled = true;
+  submitError.disabled = true;
   
   
 }else{
