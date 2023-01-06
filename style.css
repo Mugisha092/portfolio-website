@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:rgb(203, 203, 0);
+    --yellow:#333;
 }
 
 *{
@@ -37,12 +37,12 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
+    background:#D9D9D9;
+    color:#333;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
 }
 
 .btn i{
@@ -51,7 +51,8 @@ section{
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background:#5697BC;
+    border: 2px solid #D9D9D9;
 }
 
 .heading{
@@ -116,6 +117,8 @@ header .navbar ul li a{
     color:#333;
     font-size: 2rem;
     border-radius: 1rem;
+    background-color: #999;
+
 }
 
 header .navbar ul li a:hover{
@@ -192,24 +195,27 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: 1px solid #D9D9D9;
+    border-radius: 3rem;
 }
 
 .about .row .counter .box{
     width:20rem;
-    background:#222;
+    background:#D9D9D9;
     text-align: center;
     padding: 2rem;
     margin:2rem;
+    border-radius: 2rem;
 }
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--yellow);
+    color: #747373;
 }
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color:#fff;
+    color:#222;
 }
 
 .education .box-container{
@@ -219,6 +225,9 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
     padding:1rem 0;
     padding-left: 3rem;
+    border: 2px solid #D9D9D9;
+    background-color: #d9d9d946;
+    border-radius: 2rem;
 }
 
 .education .box-container .box{
@@ -254,6 +263,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
+    
 }
 
 .portfolio .box-container .box{
@@ -297,6 +307,9 @@ header .navbar ul li a:hover{
     flex:1 1 30rem;
     padding:4rem;
     padding-bottom: 0;
+    border: 2px solid #D9D9D9;
+    background-color: #d9d9d946;
+    border-radius: 2rem;
 }
 
 .contact .row form{
@@ -304,6 +317,7 @@ header .navbar ul li a:hover{
     padding:2rem;
     margin:2rem;
     margin-bottom: 4rem;
+    border-radius: 2rem;
 }
 
 .contact .row form .box{
@@ -353,6 +367,7 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
     font-size: 4rem;
+    color:#333;
 }
 .error{
     position: absolute;
@@ -452,7 +467,12 @@ form button{
 .input-group span i{
     color: seagreen;
 }
-
+nav ul li a:focus{
+    background-color: #5697BC; 
+}
+/* nav ul li a:visited{
+    background-color: #5697BC;
+} */
 
 
 
